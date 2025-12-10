@@ -9,156 +9,218 @@
             <link rel="stylesheet" href="style.css">
         </head>
         <body>
-            <!--top bar (nav)-->
             <header>
-                <div class="logo">Arcadia</div>
-                <!--links for pages-->
-                <nav class = "links">
-                    <a href="#1"> Games </a>
-                    <a href="#2"> Community </a>
-                    <a href="#3"> Library </a>
-                    <a href="#4"> Support </a>
-                    <a href="#5"> Settings </a>
-                </nav>
-
-                <!-- log in , username -->
-                                               <!-- idk how to set username or login -->
+                <div class="left-side">
+                    <div class="logo">
+                         <a href="#">
+                            <img src="logo2.png" alt="Arcadia">
+                            </a>
+                    </div>
+                    <nav class="links">
+                        <a href="#">Games</a>
+                        <a href="#">Community</a>
+                        <a href="#">Library</a>
+                        <a href="#">Support</a>
+                        <a href="#">Settings</a>
+                    </nav>
+                </div>
+                
                 <div class="user">
-                    <button class="login-btn">Log In</button>
-                    <button class="signup-btn">Sign Up</button>
+                    <a href="#" style="color:#3b7be6; background:rgba(255,255,255,0.1); padding:8px 20px; border-radius:25px; font-weight:600;">Log In</a>
+                    <a href="#" style="color:#fff; background:linear-gradient(90deg,#3b7be6,#b55fe0); padding:8px 20px; border-radius:25px; font-weight:600; box-shadow:0 4px 15px rgba(59,123,230,0.3);">Sign Up</a>
                 </div>
             </header>
-                 <!-- categories side -->
-                  <div class = "categories_side">
+                 <div class="categories_side">
                     <h3>categories</h3>
-                    <!-- list of games -->
-                        <ul>
-                              <li>  Action  </li>
-                              <li>  Sport   </li>
-                              <li>  Shooter </li>
-                              <li>  Space   </li>
-                              <li>  Horror  </li>
-                              <li>  Racing  </li>
-                              <li>  Fighting  </li>
-                              <li>  card    </li>
+                    <ul>
+                            <li>Action</li>
+                            <li>Adventure</li>
+                            <li>Casual</li>
+                            <li>City Builder</li>
+                            <li>Exploration</li>
+                            <li>Fantasy</li>
+                            <li>Fighting</li>
+                            <li>First Person</li>
+                            <li>Horror</li>
+                            <li>Indie</li>
+                            <li>MOBA</li>
+                            <li>Narration</li>
+                            <li>Open World</li>
+                            <li>Party</li>
+                            <li>Platformer</li>
+                            <li>Puzzle</li>
+                            <li>RPG</li>
+                            <li>Racing</li>
+                            <li>Shooter</li>
+                            <li>Simulation</li>
+                            <li>Space</li>
+                            <li>Sports</li>
+                            <li>Strategy</li>
+                            <li>Survival</li>
                         </ul>
                   </div> 
-                <!-- main content side -->
-                 <main class = "main_content">
-                    <!-- Main sections -->
-
-                    <!-- Featured & Recommended Section-->
-                    <section class = "Featured-side">
+                <main class="main_content">
+                    <section class="Featured-side">
                         <h2>Featured & Recommended</h2>
-                        <div class = "featured-game">
-                            <a href = "#game_link">
-                                <img src ="img/fc26.jpg" alt = "FIFA 26 Featured Game" width="300" height="170">
-                                <h3>FC 26</h3>
-                                <p class = "price">79.99$</p>
-                            </a>
-                        </div>
-                        <br>
-                    </section>
-                    <br>
-                    <!--Our Games sections -->
-                    <section class = "discover-new">
-                        <h2>Discover Our Games</h2>
-
-                        <div class ="games-grid">
-                            <!--gta 6 -->
-                            <div class = "game">
-                                <a href = "#1">
-                                    <img src ="img/gta6_2.avif" alt = "GTA 6" style="width:180px; height:280px; object-fit:cover;">
-                                    <h3 class = "game-title">GTA 6 </h3>
-                                    <p class = "game-price"> 99.99$</p>
+                        
+                        <div class="featured-container">
+                            
+                            <div class="featured-image-col">
+                                <a href="#game_link" class="featured-image-link">
+                                    <img src="img/fc25_2.jpg" alt="FIFA 26 Featured Game">
+                                    
+                                    <div class="slider-arrows">
+                                        <div class="slider-arrow left-arrow"> < </div>
+                                        <div class="slider-arrow right-arrow"> > </div>
+                                    </div>
+                                    
+                                    <div class="slider-dots">
+                                        <div class="slider-dot"></div>
+                                        <div class="slider-dot active"></div>
+                                        <div class="slider-dot"></div>
+                                        <div class="slider-dot"></div>
+                                        <div class="slider-dot"></div>
+                                    </div>
                                 </a>
                             </div>
-                            <!--Fc 26-->
-                             <div class = "game">
-                                <a href = "#2">
-                                    <img src ="img/fc26_2.avif" alt = "FC 26" style="width:180px; height:280px; object-fit:cover;">
-                                    <h3 class = "game-title"> FC 26 </h3>
-                                    <p class = "game-price"> 79.99$</p>
+                            
+                            <div class="featured-content-col">
+                                <div class="title-area">
+                                    <img src="img/EA_Sports_FC_logo.svg.png" alt="EA Sports" class="logo-overlay">
+                                    <h3 class="game-main-title">FC 26</h3> 
+                                </div>
+
+                                <p class="featured-description">
+                                    The Club is Yours in EA SPORTS FC™ 26. Play your way with a revolutionary gameplay 
+                                    experience powered by Community feedback, Manager Live Challenges that bring fresh 
+                                    storylines to the new season, and Archetypes inspired by greats of the game.
+                                </p>
+
+                                <div class="featured-controls">
+                                    <p class="featured-price-tag">99.99$</p>
+                                    <a href="#" class="buy-now-btn">Buy Now</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    
+                    <div class="featured-divider"></div>
+                    
+                    <section class="discover-new">
+                        <h2>Discover New Games</h2>
+
+                        <div class="games-grid">
+                            <div class="game">
+                                <a href="#1">
+                                    <img src="img/gta5_2.png" alt="GTA V">
+                                    <h3 class="game-title">GTA V</h3>
+                                    <p class="game-price"> 29.99$</p>
+                                </a>
+                            </div>
+                            <div class="game">
+                                <a href="#2">
+                                    <img src="img/rdd2.jpg" alt="Red Dead Redemption 2">
+                                    <h3 class="game-title">RDR 2</h3>
+                                    <p class="game-price"> 29.99$</p>
                                 </a>
                             </div>                                                        
-                            <!-- Gta 5-->
-                            <div class = "game">
-                                <a href = "#3">
-                                    <img src ="img/gta5_2.png" alt = "GTA 5" style="width:180px; height:280px; object-fit:cover;">
-                                    <h3 class = "game-title">GTA 5 </h3>
-                                    <p class = "game-price"> 69.99$</p>
+                            <div class="game">
+                                <a href="#3">
+                                    <img src="img/thewitcher.jpg" alt="The Witcher 3">
+                                    <h3 class="game-title">The Witcher 3</h3>
+                                    <p class="game-price"> 29.99$</p>
                                 </a>
                             </div>  
-                            <!--rdd2-->
-                            <div class = "game">
-                                <a href = "#4">
-                                    <img src ="img/rdd2.jpg" alt = "Red Dead Redemption 2" style="width:180px; height:280px; object-fit:cover;">
-                                    <h3 class = "game-title"> Red Dead Redemption 2 </h3>
-                                    <p class = "game-price"> 49.99$</p>
+                            <div class="game">
+                                <a href="#4">
+                                    <img src="img/ac.jpg" alt="AC Valhalla">
+                                    <h3 class="game-title">AC Valhala</h3>
+                                    <p class="game-price"> 29.99$</p>
                                 </a>
                             </div> 
-                            <!--yakuza 5-->
-                            <div class = "game">
-                                <a href = "#5">
-                                    <img src ="img/yakuza5.webp" alt = "Yakuza 5" style="width:180px; height:280px; object-fit:cover;">
-                                    <h3 class = "game-title"> Yakuza 5 </h3>
-                                    <p class = "game-price"> 35.00$</p>
-                                </a>
-                            </div>                                  
-                            <!--cyberpunk with sale-->
-                            <div class = "game">
-                                <a href = "#6">
-                                    <img src = "img/cyberpunk.jpg" alt="cyberpunk2077"style="width:180px; height:280px; object-fit:cover;">
-                                    <h3 class = "game-title">Cyberpunk 2077</h3>
-                                    <p class = "game-price">
-                                        <del>79.00$</del>
-                                        <span>30.00$</span>
-                                    </p>
-                                </a>
-                            </div>                                                                                              
                         </div>
                     </section>
                     <br><br>
-                    <!--section for free games-->
-                    <section class = "discover-new">
+                    <section class="free-to-play">
                         <h2>Free to play</h2>
-                        <div class = "games-grid">
-                            <!--free games-->
-
-                            <!--ow2-->
-                            <div class = "game">
-                                <a href = "#7">
-                                    <img src ="img/ow2.jpg" alt = "Overwatch 2" style="width:180px; height:280px; object-fit:cover;">
-                                    <h3 class = "game-title"> Overwatch 2 </h3>
-                                    <p class = "game-price"> FREE </p>
+                        <div class="games-grid">
+                            <div class="game">
+                                <a href="#5">
+                                    <img src="img/gta5_2.png" alt="GTA V">
+                                    <h3 class="game-title">GTA V</h3>
+                                    <p class="game-price"> free to play </p>
                                 </a>
                             </div>   
-                            <!--valorant-->
-                            <div class = "game">
-                                <a href = "#8">
-                                    <img src ="img/valo.webp" alt = "Valorant" style="width:180px; height:280px; object-fit:cover;">
-                                    <h3 class = "game-title"> Valorant </h3>
-                                    <p class = "game-price"> FREE </p>
+                            <div class="game">
+                                <a href="#6">
+                                    <img src="img/rdd2.jpg" alt="RDR 2">
+                                    <h3 class="game-title">RDR 2</h3>
+                                    <p class="game-price"> free to play </p>
                                 </a>
                             </div> 
-                            <!--rocket league-->
-                            <div class = "game">
-                                <a href = "#9">
-                                    <img src ="img/rocketleague.avif" alt = "rocketleague" style="width:180px; height:280px; object-fit:cover;">
-                                    <h3 class = "game-title"> Rocket League </h3>
-                                    <p class = "game-price"> FREE </p>
+                            <div class="game">
+                                <a href="#7">
+                                    <img src="img/thewitcher.jpg" alt="The Witcher 3">
+                                    <h3 class="game-title">The Witcher 3</h3>
+                                    <p class="game-price"> free to play </p>
                                 </a>
                             </div>  
-                            <!--creative -->
-                            <div class = "game">
-                                <a href = "#10">
-                                    <img src ="img/cd2.jpg" alt = "Creative Destruction" style="width:180px; height:280px; object-fit:cover;">
-                                    <h3 class = "game-title"> Creative Destruction </h3>
-                                    <p class = "game-price"> FREE </p>
+                            <div class="game">
+                                <a href="#8">
+                                    <img src="img/ac.jpg" alt="AC Valhala">
+                                    <h3 class="game-title">AC Valhala</h3>
+                                    <p class="game-price"> free to play </p>
+                                </a>
+                            </div>                                                    
+                        </div>
+                    </section>
+                    <br><br>
+                    <section class="our-offers">
+                        <h2>Our offers</h2>
+                        <div class="games-grid">
+                            <div class="game">
+                                <a href="#9">
+                                    <img src="img/gta5_2.png" alt="GTA V">
+                                    <h3 class="game-title">GTA V</h3>
+                                    <p class="game-price"> 14.99$ <del>29.99$</del></p>
+                                </a>
+                            </div>   
+                            <div class="game">
+                                <a href="#10">
+                                    <img src="img/rdd2.jpg" alt="RDR 2">
+                                    <h3 class="game-title">RDR 2</h3>
+                                    <p class="game-price"> 14.99$ <del>29.99$</del></p>
+                                </a>
+                            </div> 
+                            <div class="game">
+                                <a href="#11">
+                                    <img src="img/thewitcher.jpg" alt="The Witcher 3">
+                                    <h3 class="game-title">The Witcher 3</h3>
+                                    <p class="game-price"> 14.99$ <del>29.99$</del></p>
+                                </a>
+                            </div>  
+                            <div class="game">
+                                <a href="#12">
+                                    <img src="img/ac.jpg" alt="AC Valhala">
+                                    <h3 class="game-title">AC Valhala</h3>
+                                    <p class="game-price"> 14.99$ <del>29.99$</del></p>
                                 </a>
                             </div>                                                    
                         </div>
                     </section>
                  </main>             
         </body>
+
+        <footer>
+            <div>
+                © 2025 Arcadia Inc. All rights reserved. All trademarks are property of their respective owners worldwide. VAT included in all prices where applicable.
+            </div>
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Legal</a> |
+            <a href="#">Accessibility</a> |
+            <a href="#">User Agreement</a> |
+            <a href="#">Refunds</a>
+        </footer>
+
     </html>
